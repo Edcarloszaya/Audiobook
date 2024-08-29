@@ -29,4 +29,10 @@ class AudioBook:
 
         return texto
 
-    
+    def comverti_texto(self, texto):
+        if texto:
+            tts = gTTS(text=texto, lang="en", slow=False)
+            tts.save("audiobook.mp3")
+            print("Audiobook criado!")
+        else:
+            print("Audiobook nao foi criado!")
