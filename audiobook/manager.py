@@ -38,7 +38,7 @@ class AudioBook:
 
         return texto
 
-    def comverti_texto(self, texto):
+    def converter_texto(self, texto):
         print(f"\nComvertendo seu pdf em audio!\nTempo estimado pelo tamanho do pdf!....\nPfv espere termina...!!!")
         if texto:
             tts = gTTS(text=texto, lang="en", slow=False)
