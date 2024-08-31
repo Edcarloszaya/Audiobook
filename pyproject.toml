@@ -10,6 +10,11 @@ python = "^3.12"
 gtts = "*"
 pymupdf = "*"
 pytest = "*"
+pytest-mock = "*"
+
+[tool.pytest.ini_options]
+addopts = "-ra -vvv"
+testpaths = ["tests"]
 
 
 [build-system]
