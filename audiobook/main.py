@@ -29,8 +29,8 @@ def main():
             menu()
             texto = audio.extrair_texto(PDF)
             
-            # comverti pra audio
-            audio.comverti_texto(texto)
+            # comverter pra audio
+            audio.converter_texto(texto)
 
             criar_novamemte = input('\nDesejar criar outro Audiobook: s=[Sim] ou n=[Nao] ?')
             if criar_novamemte == 's':
