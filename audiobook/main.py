@@ -26,11 +26,12 @@ def main():
             PDF = audio.selecionar_arquivo()
 
             # extrai texto 
-            menu()
-            texto = audio.extrair_texto(PDF)
+            if PDF:
+                menu()
+                texto = audio.extrair_texto(PDF)
             
-            # comverter pra audio
-            audio.converter_texto(texto)
+                # comverter pra audio
+                audio.converter_texto(texto)
 
             criar_novamemte = input('\nDesejar criar outro Audiobook: s=[Sim] ou n=[Nao] ?')
             if criar_novamemte == 's':
